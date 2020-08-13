@@ -75,6 +75,7 @@ section p {
   padding: 15px 40px;
   display: inline-block;
   margin: 0 22px 12px;
+  min-width: 225px;
 }
 
 .primary-btn:hover {
@@ -183,30 +184,24 @@ Hero
   position: absolute;
 }
 
-.hero-container-desktop {
-  position: relative;
-}
-
-.hero-container-desktop img {
+.hero-container img {
   max-width: 100%;
   transition: transform 1s;
 }
 
-.hero-container-desktop:hover img {
+.hero-container:hover img {
   transform: scale(1.1);
 }
 
 .hero-details {
-  margin: 60px;
-  padding: 80px 0;
+  margin: 40px;
+  padding: 80px 0px;
 }
 
 .hero-details h1 {
   font-size: 62px;
   font-weight: 100;
   color: #ffffff;
-  /* font-family: "Oswald", sans-serif; */
-  /* text-transform: uppercase; */
 }
 
 .hero-details p {
@@ -217,31 +212,6 @@ Hero
   margin-top: 10px;
 }
 
-.hero-details-mobile,
-.hero-details-mobile a {
-  color: #222729;
-}
-
-.hero-details-mobile a:hover {
-  color: #222729;
-  text-decoration: none;
-  opacity: 0.9;
-}
-
-.hero-details-mobile h1 {
-  font-size: 46px;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-}
-
-.hero-details-mobile p {
-  font-size: 20px;
-  font-weight: 200;
-  line-height: 1.8;
-}
-.desktop-hero {
-  width: 100%;
-}
 .hero-details .list-ammenities {
   font-size: 18px;
   margin-bottom: 46px;
@@ -481,6 +451,31 @@ body {
   height: 100%;
 }
 
-/*/////////////////////////////////////////
-Media Queries
-////////////////////////////////////////*/
+@media (max-width: 750px) { 
+ .hero-images {
+     height: 400px;
+ }
+ #hero::after {
+    background: none;
+  }
+
+  .hero-details h1 {
+      font-size: 34px;
+  }
+
+  .hero-details p.subline {
+      font-size: 12px;
+      width: 200px;
+  }
+ 
+  .hero-details .list-ammenities {
+      margin-top: 150px;
+  }
+ .hero-details .list-ammenities, #hero a {
+      color: #222729;
+  }
+
+  .primary-btn {
+      border-color: #222729;
+  }
+}
