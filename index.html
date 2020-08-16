@@ -27,6 +27,10 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link 
+      href="assets/css/slider.css" 
+      rel="stylesheet"
+    />
 
     <title>
       2200 Westlake #S706 Seattle - Turnkey style. Downtown convenience. Luxury
@@ -96,36 +100,89 @@
     <!-- End navbar -->
 
     <section id="hero">
-      <div class="hero-container">
-        <div class="hero-images">
-          <img src="assets/images/hero_desktop.jpg" />
-        </div>
-        <div class="hero-details">
-          <h1>Welcome home.</h1>
-          <p class="subline">Live in style in downtown Seattle.</p>
-          <p class="list-ammenities">
-            <span class="list-i list-i-1"><b>$540,000</b></span>
-            <span class="list-i list-i-2"
-              ><i class="icon ion-md-bed"></i> 1 bed + office</span
-            >
-            <span class="list-i list-i-3"
-              ><i class="icon ion-ios-water"></i> 1 bath</span
-            >
-            <span class="list-i list-i-4"
-              ><i class="icon ion-ios-move"></i> 745 sqft</span
-            >
-            <span class="list-i list-i-5"
-              ><a href="https://goo.gl/maps/VosePHjXuYv4KQus9" target="new"
-                ><i class="icon ion-ios-pin"></i> 2200 Westlake Ave #S706</a
-              ></span
-            >
-          </p>
-          <a href="#tour" class="primary-btn"
-            >See details <i class="icon ion-ios-arrow-dropdown"></i
-          ></a>
-          <a href="tour.html" class="primary-btn"
-            >Take virtual tour <i class="icon ion-ios-cube"></i
-          ></a>
+      <div class="hero-container container-fluid">
+        <div class="row">
+          <div class="hero-details order-2 order-lg-1 col-lg-5">
+            <h1>Welcome home.</h1>
+            <p class="subline">Live in style in downtown Seattle.</p>
+            <p class="list-ammenities">
+              <span class="list-i list-i-1"><b>$540,000</b></span>
+              <span class="list-i list-i-2"><i class="icon ion-md-bed"></i> 1 bed + office</span>
+              <span class="list-i list-i-3"><i class="icon ion-ios-water"></i> 1 bath</span>
+              <span class="list-i list-i-4"><i class="icon ion-ios-move"></i> 745 sqft</span>
+              <span class="list-i list-i-5"><a href="https://goo.gl/maps/VosePHjXuYv4KQus9" target="new"><i
+                    class="icon ion-ios-pin"></i> 2200 Westlake Ave #S706</a></span>
+            </p>
+            <a href="#tour" class="primary-btn">See details <i class="icon ion-ios-arrow-dropdown"></i></a>
+            <a href="tour.html" class="primary-btn">Take virtual tour <i class="icon ion-ios-cube"></i></a>
+          </div>
+          <div class="wrapper order-1 order-lg-2 col-lg-7">
+            <input checked="" type="radio" name="slider" id="slide1">
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <input type="radio" name="slider" id="slide5">
+            <input type="radio" name="slider" id="slide6">
+            <div class="slider-wrapper">
+              <div class="inner">
+                <article>
+                  <div class="info bottom-right">
+                    <h3>Live</h3>
+                  </div>
+                  <img src="assets/images/building.jpg">
+                </article>
+                <article>
+                  <div class="info bottom-right">
+                    <h3>Relax</h3>
+                  </div>
+                  <img src="assets/images/05-205.jpg">
+                </article>
+                <article>
+                  <div class="info bottom-right">
+                    <h3>Dine</h3>
+                  </div>
+                  <img src="assets/images/04-172.jpg">
+                </article>
+                <article>
+                  <div class="info bottom-left">
+                    <h3>Work</h3>
+                  </div>
+                  <img src="assets/images/09-193-2.jpg">
+                </article>
+                <article>
+                  <div class="info bottom-right">
+                    <h3>Rest</h3>
+                  </div>
+                  <img src="assets/images/10-228.jpg">
+                </article>
+                <article>
+                  <div class="info bottom-right">
+                    <h3>Pamper</h3>
+                  </div>
+                  <img src="assets/images/11-246-2.jpg">
+                </article>
+              </div>
+            </div>
+    
+            <div class="slider-prev-next-control">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
+              <label for="slide4"></label>
+              <label for="slide5"></label>
+              <label for="slide6"></label>
+            </div>
+    
+            <div class="slider-dot-control">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
+              <label for="slide4"></label>
+              <label for="slide5"></label>
+              <label for="slide"></label>
+            </div>
+          </div>
+          
         </div>
       </div>
     </section>

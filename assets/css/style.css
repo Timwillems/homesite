@@ -143,32 +143,22 @@ Navbar
   font-style: italic;
   margin: 16px 0 32px 0;
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.8);
+  color: #222729;
 }
 
 /*/////////////////////////////////////////
 Hero
 ////////////////////////////////////////*/
-.hero-images {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  overflow: hidden;
-}
-.hero-images img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
+
 #hero {
   padding: 20px 0 0 0;
   margin-bottom: 20px;
   position: relative;
 }
-#hero::after {
+.col {
+  border: 2px solid black;
+}
+/*.wrapper::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -182,8 +172,8 @@ Hero
     rgba(255, 255, 255, 0) 40%
   );
   position: absolute;
-}
-
+}*/
+/*
 .hero-container img {
   max-width: 100%;
   transition: transform 1s;
@@ -192,22 +182,29 @@ Hero
 .hero-container:hover img {
   transform: scale(1.1);
 }
+*/
 
-.hero-details {
-  margin: 40px;
-  padding: 80px 0px;
+#hero {
+  margin-top: 80px;
+  border-bottom: 1px solid #222729;
+  padding-bottom: 30px;
+}
+
+.primary-btn {
+  border-color: #222729;
+  text-align: center;
 }
 
 .hero-details h1 {
   font-size: 62px;
   font-weight: 100;
-  color: #ffffff;
+  color: #222729;
 }
 
 .hero-details p {
   font-size: 20px;
   font-weight: 200;
-  color: #ffffff;
+  color: #222729;
   letter-spacing: 0.1em;
   margin-top: 10px;
 }
@@ -217,7 +214,8 @@ Hero
   margin-bottom: 46px;
 }
 .list-ammenities a {
-  border-bottom: 2px solid #fff;
+  color: #222729;
+  border-bottom: 1px solid #222729;
 }
 
 @keyframes slideIn {
@@ -468,14 +466,7 @@ body {
       width: 200px;
   }
  
-  .hero-details .list-ammenities {
-      margin-top: 150px;
-  }
  .hero-details .list-ammenities, #hero a {
       color: #222729;
-  }
-
-  .primary-btn {
-      border-color: #222729;
   }
 }
