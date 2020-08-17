@@ -79,11 +79,14 @@ article img {
     font-style: italic;
     line-height: 20px;
     opacity: 0;
-    color: #000;
+    color: #fff;
     text-align: left;
     -webkit-transition: all 1000ms ease-out 600ms;
     -moz-transition: all 1000ms ease-out 600ms;
     transition: all 1000ms ease-out 600ms;
+    background-color: rgba(5, 5, 5, 0.5);
+    padding: 7px;
+    font-size: 12px;
 }
 
 .info h3 {
