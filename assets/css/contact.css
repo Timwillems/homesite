@@ -1,0 +1,28 @@
+#contact {
+    margin-left: 30px;
+}
+
+#contact h3 {
+    color: #222729;
+}
+
+input, textarea {
+    display: block;
+    margin-bottom: 15px;
+    width: 300px;
+}
+
+.submit_btn {
+    border: 2px solid #222729;
+    background-color: #fff;
+    padding:10px;
+    text-align:  center;
+}
+
+.submit_btn:hover {
+    background-color: #ddd;
+}
+
+input.submit_btn {
+    width: 100px;
+}
