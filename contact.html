@@ -63,11 +63,11 @@
     <!-- End navbar -->
     <section id="contact">
         <h3>Let's chat about your next home</h3>
-        <form action="https://mailthis.to/2200westlakecondo" method="POST" encType="multipart/form-data">
+        <form action="https://submit-form.com/NcwqKXfqs8RNGP0Ya_bXC">
             <!-- Name -->
             <input type="text" name="name" placeholder="Your name">
             <!-- Email -->
-            <input type="email" name="email" placeholder="futurehomeowner@mail.com">
+            <input type="email" name="email" placeholder="saavyhomebuyer@mail.com">
             <!-- Phone Number -->
             <input type="tel" name="phone" placeholder="+1 (206) 555-5555">
             <!-- Textarea (Message) -->
@@ -75,14 +75,11 @@
 
             <!-- Optional (hidden) fields -->
             <!-- Custom email Subject -->
-            <input type="hidden" name="_subject" value="2200WestlakeCond: Contact form submitted">
+            <input type="hidden" name="_email.subject" value="2200 Westlake Condo - Contact Us Submission" />
             <!-- Redirect to a page after recaptcha -->
-            <input type="hidden" name="_after" value="https://www.2200westlakecondo.com/success.html">
+            <input type="hidden" name="_redirect" value="https://2200westlakecondo.com/success.html">
             <!-- Honeypot (to catch comment spam bots) -->
-            <input type="hidden" name="_honeypot" value="">
-            <!-- Apply a custom confirmation message on the second step -->
-            <input type="hidden" name="_confirmation" value="Sent! We'll be in touch.">
-
+            <input type="checkbox" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off"/>
             <!-- Submit Button -->
             <input type="submit" name="submit" value="Send" class="submit_btn">
         </form>
