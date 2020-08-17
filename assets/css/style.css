@@ -151,28 +151,15 @@ Hero
 ////////////////////////////////////////*/
 
 #hero {
-  padding: 20px 0 0 0;
-  margin-bottom: 20px;
   position: relative;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #222729;
+  padding-bottom: 30px;
 }
 .col {
   border: 2px solid black;
 }
-/*.wrapper::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.5) 0%,
-    rgba(255, 255, 255, 0) 40%
-  );
-  position: absolute;
-}*/
 /*
 .hero-container img {
   max-width: 100%;
@@ -185,9 +172,7 @@ Hero
 */
 
 #hero {
-  margin-top: 80px;
-  border-bottom: 1px solid #222729;
-  padding-bottom: 30px;
+
 }
 
 .primary-btn {
