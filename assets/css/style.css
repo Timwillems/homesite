@@ -106,6 +106,10 @@ Navbar
   z-index: 9999;
 }
 
+.nav-item a {
+  color: #222729;
+}
+
 .nav-link {
   font-size: 14px;
   font-weight: 600;
