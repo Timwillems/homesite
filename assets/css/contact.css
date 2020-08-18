@@ -2,7 +2,7 @@
     margin-left: 30px;
 }
 
-#contact h3 {
+#contact h3, #contact h4 {
     color: #222729;
     margin-bottom: 20px;
 }
@@ -19,12 +19,47 @@ input, textarea {
     color: #222729;
     padding:10px;
     text-align:  center;
+    display: block;
+    width: 175px;
+    margin-bottom: 20px;
+    height: 50px;
 }
 
 .submit_btn:hover {
     background-color: #222729;
+    color: #fff;
 }
 
-input.submit_btn {
-    width: 100px;
+.hideform {
+    opacity: 0;
+}
+
+form {
+    transition: opacity 500ms ease-in;
+}
+
+.messageus {
+    display: inline-block;
+    color: #0078FF;
+    border: 2px solid #222729;
+    padding: 0px 10px 10px 10px;
+    margin-bottom: 20px;
+    width: 175px;
+    text-align: center;
+}
+
+.messageus::before {
+    background-image: url('../images/messenger.png');
+    background-size: 30px 30px;
+    transform: translateY(25%);
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    content: '';
+    margin-right: 5px;
+}
+
+.messageus:hover {
+    color: #fff;
+    background-color: #222729;
 }
