@@ -10,12 +10,12 @@ input {
 
 .inner {
     height: 100%;
-    width: 800%;
+    width: 900%;
     line-height: 0;
 }
 
 article {
-    width: calc(100%/8);
+    width: calc(100%/9);
     float: left;
     position: relative;
     height: 100%;
@@ -142,7 +142,8 @@ article img {
 #slide5:checked~.slider-prev-next-control label:nth-child(6)::after,
 #slide6:checked~.slider-prev-next-control label:nth-child(7)::after,
 #slide7:checked~.slider-prev-next-control label:nth-child(8)::after,
-#slide8:checked~.slider-prev-next-control label:nth-child(1)::after,
+#slide8:checked~.slider-prev-next-control label:nth-child(9)::after,
+#slide9:checked~.slider-prev-next-control label:nth-child(1)::after,
 #slide2:checked~.slider-prev-next-control label:nth-child(1)::after,
 #slide3:checked~.slider-prev-next-control label:nth-child(2)::after,
 #slide4:checked~.slider-prev-next-control label:nth-child(3)::after,
@@ -150,7 +151,8 @@ article img {
 #slide6:checked~.slider-prev-next-control label:nth-child(5)::after,
 #slide7:checked~.slider-prev-next-control label:nth-child(6)::after,
 #slide8:checked~.slider-prev-next-control label:nth-child(7)::after,
-#slide1:checked~.slider-prev-next-control label:nth-child(8)::after {
+#slide9:checked~.slider-prev-next-control label:nth-child(8)::after,
+#slide1:checked~.slider-prev-next-control label:nth-child(9)::after {
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
@@ -168,7 +170,8 @@ article img {
 #slide5:checked~.slider-prev-next-control label:nth-child(6)::after,
 #slide6:checked~.slider-prev-next-control label:nth-child(7)::after,
 #slide7:checked~.slider-prev-next-control label:nth-child(8)::after,
-#slide8:checked~.slider-prev-next-control label:nth-child(1)::after 
+#slide8:checked~.slider-prev-next-control label:nth-child(9)::after,
+#slide9:checked~.slider-prev-next-control label:nth-child(1)::after 
 {
     content: ">";
     padding-left: 12px;
@@ -181,7 +184,8 @@ article img {
 #slide5:checked~.slider-prev-next-control label:nth-child(6),
 #slide6:checked~.slider-prev-next-control label:nth-child(7),
 #slide7:checked~.slider-prev-next-control label:nth-child(8),
-#slide8:checked~.slider-prev-next-control label:nth-child(1) {
+#slide8:checked~.slider-prev-next-control label:nth-child(9),
+#slide9:checked~.slider-prev-next-control label:nth-child(1) {
     display: block;
     float: right;
     margin-right: 5px;
@@ -194,7 +198,8 @@ article img {
 #slide6:checked~.slider-prev-next-control label:nth-child(5),
 #slide7:checked~.slider-prev-next-control label:nth-child(6),
 #slide8:checked~.slider-prev-next-control label:nth-child(7),
-#slide1:checked~.slider-prev-next-control label:nth-child(8) {
+#slide9:checked~.slider-prev-next-control label:nth-child(8),
+#slide1:checked~.slider-prev-next-control label:nth-child(9) {
     display: block;
     float: left;
     margin-left: 5px;
@@ -207,7 +212,8 @@ article img {
 #slide6:checked~.slider-prev-next-control label:nth-child(5)::after,
 #slide7:checked~.slider-prev-next-control label:nth-child(6)::after,
 #slide8:checked~.slider-prev-next-control label:nth-child(7)::after,
-#slide1:checked~.slider-prev-next-control label:nth-child(8)::after {
+#slide9:checked~.slider-prev-next-control label:nth-child(8)::after,
+#slide1:checked~.slider-prev-next-control label:nth-child(9)::after {
     content: "<";
     padding-left: 10px;
 }
@@ -219,7 +225,8 @@ article img {
 #slide5:checked~.slider-dot-control label:nth-child(5),
 #slide6:checked~.slider-dot-control label:nth-child(6),
 #slide7:checked~.slider-dot-control label:nth-child(7),
-#slide8:checked~.slider-dot-control label:nth-child(8) {
+#slide8:checked~.slider-dot-control label:nth-child(8),
+#slide9:checked~.slider-dot-control label:nth-child(9) {
     background: #333;
 }
 
@@ -230,7 +237,8 @@ article img {
 #slide5:checked~.slider-wrapper article:nth-child(5) .info,
 #slide6:checked~.slider-wrapper article:nth-child(6) .info,
 #slide7:checked~.slider-wrapper article:nth-child(7) .info,
-#slide8:checked~.slider-wrapper article:nth-child(8) .info {
+#slide8:checked~.slider-wrapper article:nth-child(8) .info,
+#slide9:checked~.slider-wrapper article:nth-child(9) .info {
     opacity: 1;
 }
 
@@ -264,6 +272,10 @@ article img {
 
 #slide8:checked~.slider-wrapper .inner {
     margin-left: -700%;
+}
+
+#slide9:checked~.slider-wrapper .inner {
+    margin-left: -800%;
 }
 
 /*---- TABLET ----*/
